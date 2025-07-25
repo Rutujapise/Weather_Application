@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('https://i.pinimg.com/originals/53/4a/8e/534a8e7177bc68caa1837c72e2f5a753.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .weather-card {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border: 1px solid rgb(199, 165, 165);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="text-center display-4 text-white py-4">🌤 Weather Application</h1>
+
+  <div class="container w-25 bg-dark rounded p-4 shadow">
+    <div class="mb-3">
+      <input type="text" id="cityName" class="form-control" placeholder="Enter City Name" />
+    </div>
+    <button onclick="handleSubmit()" class="btn btn-primary w-100">Get Weather</button>
+  </div>
+
+  <div class="container mt-4" id="result"></div>
+
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
